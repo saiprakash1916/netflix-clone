@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Netflix India -Watch TV Shows</title>
+    <link rel="shortcut icon" href="./images/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="./css/netflix.css">
+</head>
+<body>
+     <!---header Block starts-->
+    <section class="mainPage">
+    <section class="headerBlock">
+        <article class="container">
+            <div class="left">
+                <img src="./images/logo1.png" alt="logo">
+            </div>
+            <div class="right">
+                <a href="./signin.html">Sign In</a>
+            </div>
+        </article>
+    </section>
+    <!---header block ends-->
+
+    <!---header block1 starts-->
+    <section class="headerBlock1">
+        <article class="center">
+            <div class="h1">
+                <h>Unlimited movies, TV <br>shows and more.</h>
+            </div>
+            <div class="h2">
+                <h>Watch anywhere. Cancel anytime.</h>
+            </div>
+            <div class="h3">
+                <h>Ready to watch? Enter your email to create or restart your membership.</h>
+            </div>
+            <div class="h4">
+                <input type="Email address" name="Email address" id="Email address" placeholder="Email address" required>
+                <button>GET STARTED ></button>
+            </div>
+        </article>
+    </section>
+    </section>
+    <!---header block1 ends-->
+
+    <!--header block2 starts-->
+    <section class="headerBlock2">
+        <article class="part1">
+            <div class="tv">
+                <div class="h5">
+                    <h>Enjoy on your TV.</h>
+                </div>
+                <div class="h6">
+                    <h>Watch on smart TVs, PlayStation, Xbox,<br>Chromecast, Apple TV, Blu-ray players and <br>more.</h>
+                </div>
+            </div>
+            <div class="img">
+                <img src="./images/group.png" alt="tv" width="500px" height="400px">
+            </div>  
+        </article>
+    </section>
+    <!---header block2 ends-->
+
+    <!---header block3 starts-->
+    <section class="headerBlock3">
+        <article class="part2">
+            <div class="img2">
+                <img src="./images/mobile-0819.jpg" alt="mobile-0819" width="500px" height="400px">
+            </div>
+            <div class="mobile">
+                <div class="h7">
+                    <h>Download your shows <br>to watch offline.</h>
+                </div>
+                <div class="h8">
+                    <h>Save your favourites easily and always have <br>something to watch.</h>
+                </div>
+            </div>
+        </article>
+    </section>
+    <!---header block3 ends-->
+
+    <!---header block4 ends-->
+    <section class="headerBlock4">
+        <article class="part3">
+            <div>
+                <div class="h9">
+                    <h>Watch everywhere.</h>
+                </div>
+                <div class="h10">
+                    <h>Stream unlimited movies and TV shows on <br>your phone, tablet, laptop, and TV.</h>
+                </div>
+            </div>
+            <div class="img3">
+                <img src="./images/pic.png" alt="laptop" width="500px" height="400px">
+            </div>
+        </article>
+    </section>
+    <!---header block4 ends-->
+
+    <!---header block5 starts-->
+    <section class="headerBlock5">
+        <article class="part4">
+            <div class="h11">
+                <h>Frequently Asked Questions</h>
+            </div>
+            <button class="collapsible">What is Netflix?</button>
+            <div class="content">
+                <p>Netflix is a streaming service that offers a wide variety of award-winning TV shows, movies, anime, documentaries and more – on thousands of internet-connected devices.</p><br>
+                <p>You can watch as much as you want, whenever you want, without a single ad – all for one low monthly price. There's always something new to discover, and new TV shows and movies are added every week!</p>
+            </div>
+            <button class="collapsible">How much does Netflix cost?</button>
+            <div class="content">
+                <p>Watch Netflix on your smartphone, tablet, Smart TV, laptop, or streaming device, all for one fixed monthly fee. Plans range from ₹ 199 to ₹ 799 a month. No extra costs, no contracts.</p>
+            </div>
+            <button class="collapsible">Where can I watch?</button>
+            <div class="content">
+                <p>Watch anywhere, anytime, on an unlimited number of devices. Sign in with your Netflix account to watch instantly on the web at netflix.com from your personal computer or on any internet-connected device that offers the Netflix app, including smart TVs, smartphones, tablets, streaming media players and game consoles.</p><br>
+                <p>You can also download your favourite shows with the iOS, Android, or Windows 10 app. Use downloads to watch while you're on the go and without an internet connection. Take Netflix with you anywhere.</p>
+            </div>
+            <button class="collapsible">How do I cancel?</button>
+            <div class="content">
+                <p>Netflix is flexible. There are no annoying contracts and no commitments. You can easily cancel your account online in two clicks. There are no cancellation fees – start or stop your account anytime.</p>
+            </div>
+            <button class="collapsible">What can I watch on Netflix?</button>
+            <div class="content">
+                <p>Netflix has an extensive library of feature films, documentaries, TV shows, anime, award-winning Netflix originals, and more. Watch as much as you want, anytime you want.</p>
+            </div>
+
+            <!-----Java Script code starts-->
+            <script>
+            var coll = document.getElementsByClassName("collapsible");
+            var i;
+
+            for (i = 0; i < coll.length; i++) {
+            coll[i].addEventListener("click", function() {
+                this.classList.toggle("active");
+                var content = this.nextElementSibling;
+                if (content.style.maxHeight){
+                content.style.maxHeight = null;
+                } else {
+                content.style.maxHeight = content.scrollHeight + "px";
+                } 
+            });
+            }
+            </script>
+            <!-----Java Script code end-->
+            <div class="h12">
+                <h>Ready to watch? Enter your email to create or restart your membership.</h>
+            </div>
+            <div class="h4">
+                <input type="Email address" name="Email address" id="Email address" placeholder="Email address" size="70" required>
+                <button>GET STARTED ></button>
+            </div>
+        </article>
+    </section>
+    <!---header block5 ends-->
+</body>
+</html>
